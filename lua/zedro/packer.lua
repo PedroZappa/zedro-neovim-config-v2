@@ -77,6 +77,8 @@ return require('packer').startup(function(use)
 		{'nvim-lua/popup.nvim'},
 		{'nvim-lua/plenary.nvim'},
 	}}
+    -- LLM
+    use ( 'Exafunction/codeium.vim' )
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
