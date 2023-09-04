@@ -72,13 +72,18 @@ return require('packer').startup(function(use)
 		}
 	}
 	use { 'sudormrfbin/cheatsheet.nvim',
-	requires = {
-		{'nvim-telescope/telescope.nvim'},
-		{'nvim-lua/popup.nvim'},
-		{'nvim-lua/plenary.nvim'},
-	}}
+    	requires = {
+    		{'nvim-telescope/telescope.nvim'},
+    		{'nvim-lua/popup.nvim'},
+		    {'nvim-lua/plenary.nvim'},
+	    }
+    }
     -- LLM
     use ( 'Exafunction/codeium.vim' )
+    -- tmux Integration
+    use ( 'christoomey/vim-tmux-navigator' 
+        lazy = true,
+    )
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
